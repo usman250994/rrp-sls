@@ -1,9 +1,9 @@
 # Change these
-server '45.55.190.140', port: 80, roles: [:web, :app, :db], primary: true
+server '104.131.97.192', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/usman250994/rrp-sls.git'
 set :application,     'rrp-sls'
-set :user,            'deployer'
+set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
