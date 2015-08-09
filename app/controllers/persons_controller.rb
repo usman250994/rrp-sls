@@ -12,7 +12,7 @@ end
 
 def create
   @person = Person.new(Person_params)
-  if @Person.save
+  if @person.save
   else 
     render new
   end
@@ -20,7 +20,7 @@ end
 
  private
  def Person_params
-   params.require(:Person).permit(:name, :email, :password, :password_confirmation)
+   params.require(:person).permit(:name, :email, :password, :password_confirmation)
  end
  
  
