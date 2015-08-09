@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   get 'about' => 'staticpages#about'
    get 'signUp' => 'persons#new'
-  resources :persons
-    resource :person
+ 
+    resources :persons
+    
+    
+  
 end
