@@ -1,4 +1,4 @@
-class PersonsController < ApplicationController
+class PeopleController < ApplicationController
 
 
 
@@ -11,15 +11,16 @@ def new
 end
 
 def create
-  @person = Person.new(Person_params)
+  @person = Person.new(person_params)
   if @person.save
+    render create
   else 
     render new
   end
 end
 
  private
- def Person_params
+ def person_params
    params.require(:person).permit(:name, :email, :password, :password_confirmation)
  end
  

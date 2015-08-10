@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'persons/show'
+  get 'people/show'
 
   root 'staticpages#home'
 
@@ -8,10 +8,9 @@ Rails.application.routes.draw do
   get 'help' => 'staticpages#help'
 
   get 'about' => 'staticpages#about'
-   get 'signUp' => 'persons#new'
+   get 'signUp' => 'people#new'
  
-    resource :person
-    
+    resources :people
     
   
 end
